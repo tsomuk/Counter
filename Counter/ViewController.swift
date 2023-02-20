@@ -14,6 +14,26 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    private var counterValue = 0
+    
+    @IBOutlet weak var counterLabel: UILabel!
+   
+    
+    
+    @IBAction func plusButton() {
+        counterValue += 1
+        counterLabel.text = "Значение счетчика: \(counterValue)"
+        print(counterValue)
+    }
+    
 
+    @IBAction func resetButton() {
+        counterValue = 0
+        counterLabel.text = "Значение счетчика: \(counterValue)"
+        print(counterValue)
+    }
+    
+    
+    
 }
 
