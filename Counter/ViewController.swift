@@ -9,28 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
     private var counterValue = 0
-    
-    @IBOutlet weak var counterLabel: UILabel!
+     @IBOutlet private weak var mainTitle: UILabel!
    
+    @IBOutlet private weak var counterValueLabel: UILabel!
     
     
-    @IBAction func plusButton() {
+     @IBAction private func plustButtonTapped() {
         counterValue += 1
-        counterLabel.text = "Значение счетчика: \(counterValue)"
-        print(counterValue)
+        mainTitle.text = "Значение счетчика:"
+         counterValueLabel.text = "\(counterValue)"
+        
     }
     
 
-    @IBAction func resetButton() {
+    @IBAction private func resetButtonTapped() {
         counterValue = 0
-        counterLabel.text = "Значение счетчика: \(counterValue)"
-        print(counterValue)
+        mainTitle.text = "Значение счетчика:"
+        counterValueLabel.text = "\(counterValue)"
+        
     }
     
     
