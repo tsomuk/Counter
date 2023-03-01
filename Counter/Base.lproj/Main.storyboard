@@ -29,7 +29,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="plustButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKn-MM-lqV"/>
+                                    <action selector="plusButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBn-DB-xYH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-hj-wmo">
